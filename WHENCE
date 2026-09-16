@@ -3037,6 +3037,7 @@ Link: brcm/brcmfmac43430-sdio.friendlyarm,nanopi-r1.txt -> brcmfmac43430-sdio.AP
 Link: brcm/brcmfmac43430-sdio.starfive,visionfive-v1.txt -> brcmfmac43430-sdio.AP6212.txt
 Link: brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-a1.txt -> brcmfmac43430-sdio.AP6212.txt
 Link: brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-r0.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.ultrapower,taiqicat-a01.txt -> brcmfmac43430-sdio.AP6212.txt
 File: "brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt"
 File: "brcm/brcmfmac43430-sdio.ilife-S806.txt"
 File: "brcm/brcmfmac43430-sdio.MUR1DX.txt"
@@ -3628,6 +3629,9 @@ Version: 0.0.5
 File: rtl_nic/rtl8261c.bin
 Version: 0.0.1
 
+File: rtl_nic/rtl8261d.bin
+Version: 0.0.1
+
 Licence: Redistributable. See LICENSE.r8169 for details.
 
 --------------------------------------------------------------------------
@@ -3816,8 +3820,13 @@ File: ath10k/WCN3990/hw1.0/board-2.bin
 File: ath10k/WCN3990/hw1.0/firmware-5.bin
 File: ath10k/WCN3990/hw1.0/wlanmdsp.mbn
 Link: qcom/sdm845/wlanmdsp.mbn -> ../../ath10k/WCN3990/hw1.0/wlanmdsp.mbn
+Link: qcom/sdm845/SHIFT/axolotl/wlanmdsp.mbn -> ../../../../ath10k/WCN3990/hw1.0/wlanmdsp.mbn
 Version: WLAN.HL.2.0-01387-QCAHLSWMTPLZ-1
 File: ath10k/WCN3990/hw1.0/notice.txt_wlanmdsp
+File: ath10k/WCN3990/hw1.0/shikra/firmware-5.bin
+File: ath10k/WCN3990/hw1.0/shikra/wlanmdsp.mbn
+Version: WLAN.HL.3.3.7.c5-00093.2-QCAHLSWMTPL-1
+File: ath10k/WCN3990/hw1.0/shikra/notice.txt_wlanmdsp
 
 Licence: Redistributable. See LICENSE.QualcommAtheros_ath10k for details
 
@@ -6601,6 +6610,10 @@ Link: qcom/vpu/vpu20_p1_gen2.mbn -> vpu20_p1_gen2_s6.mbn
 
 Version: VIDEO.VPU.3.4-0059
 
+File: qcom/vpu/vpu20_p4_gen2_s6.mbn
+
+Version: video-firmware.2.4.2-39cc47c1d64195c749014787e6ab938cc34a4071
+
 File: qcom/vpu/vpu20_p4_sm8450_s7.mbn
 
 Version: VIDEO.VPU.2.4-0096
@@ -7034,6 +7047,15 @@ File: qcom/kaanapali/soccp_dtb.mbn
 Version: SOCCP.FW.2.1-00204-KAANAPALI_SOCCP_PACK-1
 RawFile: qcom/kaanapali/soccpr.jsn
 
+# qcom/maili
+File: qcom/maili/adsp.mbn
+File: qcom/maili/adsp_dtb.mbn
+Version: LPAIDSP.HT.1.6-00701.4-HAWI-3
+RawFile: qcom/maili/adspr.jsn
+RawFile: qcom/maili/adsps.jsn
+RawFile: qcom/maili/adspua.jsn
+RawFile: qcom/maili/adspuo.jsn
+
 # qcom/qcs8300
 Link: qcom/qcs8300/adsp.mbn -> ../sa8775p/adsp.mbn
 Link: qcom/qcs8300/adspr.jsn -> ../sa8775p/adspr.jsn
@@ -7135,6 +7157,7 @@ Licence: Redistributable. See LICENSE.dell and NOTICE.qcom for details
 Driver: qcom_q6v5_mss - Qualcomm modem subsystem firmware
 
 File: qcom/sdm845/mba.mbn
+Link: qcom/sdm845/SHIFT/axolotl/mba.mbn -> ../../mba.mbn
 File: qcom/sdm845/modem_nm.mbn
 RawFile: qcom/sdm845/modemuw.jsn
 Link: qcom/sdm845/modem.mbn -> modem_nm.mbn
@@ -8482,6 +8505,7 @@ File: cirrus/cs35l56/CS35L56_Rev4.5.3.wmfw
 File: cirrus/cs35l56/CS35L56_Rev4.5.9.wmfw
 File: cirrus/cs35l56/CS35L56_Rev4.7.0.wmfw
 File: cirrus/cs35l56/CS35L56_Rev4.7.2.wmfw
+File: cirrus/cs35l56/CS35L56_Rev4.7.12.wmfw
 File: cirrus/cs35l63/CS35L63_Rev2.5.4.wmfw
 File: cirrus/cs35l63/CS35L63_Rev2.5.7.wmfw
 Link: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
@@ -9367,6 +9391,11 @@ File: cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid0-ampr.bin
 Link: cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1.wmfw -> cs35l56/CS35L56_Rev3.13.3.wmfw
 Link: cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1-ampl.bin -> cs35l56-b0-dsp1-misc-17aa383c-spkid0-ampl.bin
 Link: cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1-ampr.bin -> cs35l56-b0-dsp1-misc-17aa383c-spkid0-ampr.bin
+Link: cirrus/cs35l57-b2-dsp1-misc-17aa3843.wmfw -> cs35l56/CS35L56_Rev4.7.12.wmfw
+File: cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u0.bin
+File: cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u1.bin
+File: cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u2.bin
+File: cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u3.bin
 Link: cirrus/cs35l56-b0-dsp1-misc-17aa3905.wmfw -> cs35l56/CS35L56_Rev3.11.18.wmfw
 File: cirrus/cs35l56-b0-dsp1-misc-17aa3905-amp1.bin
 File: cirrus/cs35l56-b0-dsp1-misc-17aa3905-amp2.bin
@@ -10661,15 +10690,15 @@ License: Redistributable. See LICENSE.qcom and NOTICE.qcom for details
 Driver: intel_vpu - Intel NPU driver
 
 File: intel/vpu/vpu_37xx_v1.bin
-Version: 20260630*MTL_CLIENT_SILICON-NVR+NN-deployment*3b431d96211eb618edf1f7c444daa8185f1e686c*3b431d96211eb618edf1f7c444daa8185f1e686c*3b431d96211
+Version: 20260820*MTL_CLIENT_SILICON-NVR+NN-deployment*6fc835a192052ac2261c4e1d5da7379ced95ae81*6fc835a192052ac2261c4e1d5da7379ced95ae81*6fc835a1920
 Link: intel/vpu/vpu_37xx_v0.0.bin -> vpu_37xx_v1.bin
 
 File: intel/vpu/vpu_40xx_v1.bin
-Version: Jun 30 2026*NPU40xx*build/ci/npu-fw-ci-ci_branch_UD202628_npu_release_26ww25-20260626_085052-f9a611865dbf3e6b37a17a0b01a7e81e7fc812e7-1-g3b431d96211*3b431d96211eb618edf1f7c444daa8185f1e686c
+Version: Aug 20 2026*NPU40xx*build/ci/npu-fw-ci-ci_branch_UD202638_npu_release_26ww32-20260813_185051-3a5e4dd1cf93522baa79e55a53f2ac7165723cad-1-g6fc835a1920*6fc835a192052ac2261c4e1d5da7379ced95ae81
 Link: intel/vpu/vpu_40xx_v0.0.bin -> vpu_40xx_v1.bin
 
 File: intel/vpu/vpu_50xx_v1.bin
-Version: Jun 30 2026*NPU50xx*build/ci/npu-fw-ci-ci_branch_UD202628_npu_release_26ww25-20260626_085052-f9a611865dbf3e6b37a17a0b01a7e81e7fc812e7-1-g3b431d96211*3b431d96211eb618edf1f7c444daa8185f1e686c
+Version: Aug 20 2026*NPU50xx*build/ci/npu-fw-ci-ci_branch_UD202638_npu_release_26ww32-20260813_185051-3a5e4dd1cf93522baa79e55a53f2ac7165723cad-1-g6fc835a1920*6fc835a192052ac2261c4e1d5da7379ced95ae81
 Link: intel/vpu/vpu_50xx_v0.0.bin -> vpu_50xx_v1.bin
 
 License: Redistributable. See LICENSE.intel_vpu for details
